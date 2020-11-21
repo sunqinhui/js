@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function fn(){
+				for(var i = 0;i<9;i++){
+					var div = document.getElementById("mydiv");
+					var  color = i%2==0?"blue":"red";
+					div.innerHTML += "<div class='"+color+"'>"
+				}
+			}
+			
+		</script>
+		<style type="text/css">
+			#mydiv{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+			}
+			.blue{
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				float: left;
+			}
+			.red{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				float: left;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<input type="button" value="添加" onclick="fn()">
+		<div id="mydiv"></div>
+	</body>
+</html>

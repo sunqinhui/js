@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var arr = [];
+			for(var i = 0;i<5;i++){
+				arr[i] = parseInt(Math.random()*101);
+			}
+			document.write("随机数"+arr+"<br/>")
+			
+			var max = arr[0];
+			for(var j = 0;j<arr.length;j++){
+					if(arr[j]>max){
+						max = arr[j]
+					}
+			}
+			document.write("最大值为:"+max)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
